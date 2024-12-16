@@ -2,9 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from "@/app/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/app/components/ui/card"
-import { Youtube, AirplayIcon as Spotify, PodcastIcon as ApplePodcast, Rss } from 'lucide-react'
-import { Input } from "@/app/components/ui/input"
-import { Textarea } from "@/app/components/ui/textarea"
+import EpisodesSection from './components/ui/EpisodesSection'
 
 export default function Home() {
   return (
@@ -12,13 +10,12 @@ export default function Home() {
       {/* Header */}
       <header className="container mx-auto py-6 px-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-blue-900">Your Podcast Name</h1>
+          <h1 className="text-2xl font-bold text-blue-900">ወቸው GOOD</h1>
           <nav>
             <ul className="flex space-x-4">
               <li><Link href="#" className="hover:text-blue-700">Home</Link></li>
               <li><Link href="#episodes" className="hover:text-blue-700">Episodes</Link></li>
               <li><Link href="#about" className="hover:text-blue-700">About</Link></li>
-              <li><Link href="#contact" className="hover:text-blue-700">Contact</Link></li>
             </ul>
           </nav>
         </div>
@@ -27,8 +24,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto py-12 px-4">
         <div className="text-center">
-          <h2 className="text-4xl font-bold mb-4">Welcome to Your Podcast</h2>
-          <p className="text-xl mb-8">Discover amazing conversations and insights every week!</p>
+          <h2 className="text-4xl font-bold mb-4">Welcome to ወቸው GOOD</h2>
+          <p className="text-xl mb-8">LET'S HAVE A <i>Wechew</i> GOOD TIME</p>
           <Button className="bg-blue-700 text-yellow-400 hover:bg-blue-800">
             Subscribe Now
           </Button>
@@ -40,22 +37,23 @@ export default function Home() {
         <h3 className="text-2xl font-bold mb-6">Latest Episode</h3>
         <Card className="bg-yellow-300/90">
           <CardHeader>
-            <CardTitle className="text-blue-900">Episode Title Goes Here</CardTitle>
-            <CardDescription>Episode #123 • May 15, 2023</CardDescription>
+            <CardTitle className="text-blue-900">ሲሰድቡኝ ደስ እያለኝ መጣ | Brook news | ወቸውGOOD |</CardTitle>
+            <CardDescription>Episode #111 • Dec 11, 2024</CardDescription>
           </CardHeader>
           <CardContent>
             <Image
-              src="/placeholder.svg?height=200&width=400"
+              src='/assets/img/111.jpg'
               alt="Latest episode thumbnail"
               width={400}
               height={200}
               className="w-full rounded-lg mb-4"
             />
-            <p>Brief description of the episode goes here. This should be a short teaser that encourages listeners to check out the full episode.</p>
           </CardContent>
           <CardFooter>
             <Button className="bg-blue-700 text-yellow-400 hover:bg-blue-800">
+            <Link href="https://www.youtube.com/watch?v=S5oxyaBP2Lg" target='blank'>
               Listen Now
+            </Link>
             </Button>
           </CardFooter>
         </Card>
@@ -63,112 +61,58 @@ export default function Home() {
 
       {/* Recent Episodes */}
       <section className="container mx-auto py-12 px-4">
-        <h3 className="text-2xl font-bold mb-6">Recent Episodes</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[1, 2, 3].map((episode) => (
-            <Card key={episode} className="bg-yellow-300/90">
-              <CardHeader>
-                <CardTitle className="text-blue-900">Episode Title {episode}</CardTitle>
-                <CardDescription>Episode #{123 - episode} • May {15 - episode}, 2023</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src={`/placeholder.svg?height=150&width=300`}
-                  alt={`Episode ${episode} thumbnail`}
-                  width={300}
-                  height={150}
-                  className="w-full rounded-lg mb-4"
-                />
-                <p className="line-clamp-3">Brief description of the episode goes here. This should be a short teaser that encourages listeners to check out the full episode.</p>
-              </CardContent>
-              <CardFooter>
-                <Button variant="outline" className="text-blue-700 border-blue-700 hover:bg-blue-700 hover:text-yellow-400">
-                  Listen
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
+      <EpisodesSection></EpisodesSection>
       </section>
 
       {/* About Section */}
       <section id="about" className="container mx-auto py-12 px-4">
-        <h3 className="text-2xl font-bold mb-6">About Our Podcast</h3>
+        <h3 className="text-2xl font-bold mb-6">About ወቸው GOOD</h3>
         <div className="bg-yellow-300/90 p-6 rounded-lg">
           <div className="flex flex-col md:flex-row items-center">
             <Image
-              src="/placeholder.svg?height=300&width=300"
+              src='/assets/img/logo.png'
               alt="Podcast Host"
               width={300}
               height={300}
               className="rounded-full mb-4 md:mb-0 md:mr-6"
             />
             <div>
-              <h4 className="text-xl font-bold mb-2">Your Host Name</h4>
               <p className="mb-4">
-                Brief bio of the podcast host goes here. Describe your background, expertise, and what inspired you to start this podcast. Share your passion for the topics you cover and what listeners can expect from your show.
+              ውቸው GOOD is the most vibrant podcast channel in Ethiopia entertaining several topics filled with laughter, experience, ideas, philosophies and other worth discussing topics. Our channel offers multiple choices of guests with various life experiences and knowledge sharing their stories in a very natural and humanly way so that we can learn and enjoy each and every moment with you our audience. ወቸው GOOD aspires to be the place where new ideas flourish and help cultivate them in way the generation can benefit from them. 
               </p>
-              <p>
-                Our podcast is dedicated to [describe the main focus or theme of your podcast]. Each episode, we bring you [describe the content, e.g., interviews with industry experts, deep dives into fascinating topics, etc.]. Our goal is to [describe the value you provide to your listeners, e.g., educate, entertain, inspire].
+              <p className="mb-4">
+              ወቸው GOOD was founded and established by Abel Misrak, with the help of Bereket Tadesse and Yonatan Fasil along with co hosts Mahider Kebede and Dania Awet. ወቸው GOOD aims to be the biggest show in Ethiopia with all the variety of guests and ideas while becoming voice to the new generation! 
               </p>
+
+              <p className="mb-4">
+              ወቸው GOOD የአዲሱ ትውልድ ድምፅ ነው!!!
+               </p>
+
+               <p className="mb-4">
+               ወቸው GOOD is the voice of the new generation!!!
+               </p>
+
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Us Section */}
-      <section id="contact" className="container mx-auto py-12 px-4">
-        <h3 className="text-2xl font-bold mb-6">Contact Us</h3>
-        <Card className="bg-yellow-300/90">
-          <CardHeader>
-            <CardTitle className="text-blue-900">Get in Touch</CardTitle>
-            <CardDescription>Have a question or suggestion? We'd love to hear from you!</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <form className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-blue-900 mb-1">Name</label>
-                <Input id="name" placeholder="Your Name" className="bg-yellow-100" />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-blue-900 mb-1">Email</label>
-                <Input id="email" type="email" placeholder="your@email.com" className="bg-yellow-100" />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-blue-900 mb-1">Message</label>
-                <Textarea id="message" placeholder="Your message here..." className="bg-yellow-100" />
-              </div>
-              <Button className="bg-blue-700 text-yellow-400 hover:bg-blue-800">
-                Send Message
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
-      </section>
-
       {/* Subscribe Section */}
       <section className="container mx-auto py-12 px-4">
         <h3 className="text-2xl font-bold mb-6 text-center">Subscribe to Our Podcast</h3>
-        <div className="flex flex-wrap justify-center gap-4">
-          <Button variant="outline" className="text-blue-700 border-blue-700 hover:bg-blue-700 hover:text-yellow-400">
-            <Youtube className="mr-2 h-4 w-4" /> YouTube
-          </Button>
-          <Button variant="outline" className="text-blue-700 border-blue-700 hover:bg-blue-700 hover:text-yellow-400">
-            <Spotify className="mr-2 h-4 w-4" /> Spotify
-          </Button>
-          <Button variant="outline" className="text-blue-700 border-blue-700 hover:bg-blue-700 hover:text-yellow-400">
-            <ApplePodcast className="mr-2 h-4 w-4" /> Apple Podcasts
-          </Button>
-          <Button variant="outline" className="text-blue-700 border-blue-700 hover:bg-blue-700 hover:text-yellow-400">
-            <Rss className="mr-2 h-4 w-4" /> RSS Feed
-          </Button>
+        <div className="flex flex-wrap justify-center gap-4" >
+          <button className="px-4 py-2 text-blue-700 border border-blue-700 rounded hover:bg-blue-700 hover:text-yellow-400">
+           <Link href="https://www.youtube.com/@WECHEWGOOD" target='blank'>
+           YouTube
+           </Link> 
+          </button>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="bg-yellow-500/90 py-6">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2023 Your Podcast Name. All rights reserved.</p>
+          <p>&copy; 2024 ወቸው GOOD. All rights reserved.</p>
         </div>
       </footer>
     </div>
