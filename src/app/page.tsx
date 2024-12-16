@@ -25,7 +25,7 @@ export default function Home() {
       <section className="container mx-auto py-12 px-4">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-4">Welcome to ወቸው GOOD</h2>
-          <p className="text-xl mb-8">LET'S HAVE A <i>Wechew</i> GOOD TIME</p>
+          <p className="text-xl mb-8">LETS HAVE A <i>Wechew</i> GOOD TIME</p>
           <Button className="bg-blue-700 text-yellow-400 hover:bg-blue-800">
             Subscribe Now
           </Button>
