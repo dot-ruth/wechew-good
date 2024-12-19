@@ -37,12 +37,12 @@ export default function Home() {
         <h3 className="text-2xl font-bold mb-6">Latest Episode</h3>
         <Card className="bg-yellow-300/90">
           <CardHeader>
-            <CardTitle className="text-blue-900">ሲሰድቡኝ ደስ እያለኝ መጣ | Brook news | ወቸውGOOD |</CardTitle>
-            <CardDescription>Episode #111 • Dec 11, 2024</CardDescription>
+            <CardTitle className="text-blue-900">ሃሳብ ግንባታ በ Social Media | ወቸውGOOD</CardTitle>
+            <CardDescription>Episode #112 • Dec 18, 2024</CardDescription>
           </CardHeader>
           <CardContent>
             <Image
-              src='/assets/img/111.jpg'
+              src='/assets/img/112.jpg'
               alt="Latest episode thumbnail"
               width={400}
               height={200}
@@ -51,7 +51,7 @@ export default function Home() {
           </CardContent>
           <CardFooter>
             <Button className="bg-blue-700 text-yellow-400 hover:bg-blue-800">
-            <Link href="https://www.youtube.com/watch?v=S5oxyaBP2Lg" target='blank'>
+            <Link href="https://www.youtube.com/watch?v=p5JllDu7fns" target='blank'>
               Listen Now
             </Link>
             </Button>

@@ -1,6 +1,22 @@
 const episodes = [
+  {
+    id:1,
+    title: "ሃሳብ ግንባታ በ Social Media | ወቸውGOOD",
+    number: 112,
+    date: "Dec 18, 2024",
+    thumbnail: '/assets/img/112.jpg',
+    link:"https://www.youtube.com/watch?v=p5JllDu7fns"
+  },
+  {
+    id:2,
+    title: "ሲሰድቡኝ ደስ እያለኝ መጣ | Brook news | ወቸውGOOD",
+    number: 111,
+    date: "Dec 14, 2024",
+    thumbnail: '/assets/img/111.jpg',
+    link:"https://www.youtube.com/watch?v=S5oxyaBP2Lg"
+  },
     {
-      id: 1,
+      id: 2,
       title: "ለዉጥማ አለ | ወቸውGOOD |",
       number: 110,
       date: "Dec 11, 2024",
