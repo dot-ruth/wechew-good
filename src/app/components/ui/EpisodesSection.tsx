@@ -14,7 +14,7 @@ import {
 
 const EpisodesSection = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
+  const itemsPerPage = 12;
 
   const paginatedEpisodes = episodes.slice(
     (currentPage - 1) * itemsPerPage,
@@ -36,7 +36,7 @@ const EpisodesSection = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Image
+              <img
                 src={episode.thumbnail}
                 alt={`Thumbnail for ${episode.title}`}
                 width={200}

@@ -27,7 +27,9 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-4">Welcome to ወቸው GOOD</h2>
           <p className="text-xl mb-8">LETS HAVE A <i>Wechew</i> GOOD TIME</p>
           <Button className="bg-blue-700 text-yellow-400 hover:bg-blue-800">
-            Subscribe Now
+            <Link href="https://www.youtube.com/@WECHEWGOOD" target='blank'>
+              Subscribe Now
+            </Link>
           </Button>
         </div>
       </section>
@@ -37,12 +39,12 @@ export default function Home() {
         <h3 className="text-2xl font-bold mb-6">Latest Episode</h3>
         <Card className="bg-yellow-300/90">
           <CardHeader>
-            <CardTitle className="text-blue-900">ሃሳብ ግንባታ በ Social Media | ወቸውGOOD</CardTitle>
-            <CardDescription>Episode #112 • Dec 18, 2024</CardDescription>
+            <CardTitle className="text-blue-900">የሮፍናን የመጀመሪያ ክሊፕ ሰራነው | Kirubel Tibebu | ወቸውGOOD |</CardTitle>
+            <CardDescription>Episode #113 • Dec 21, 2024</CardDescription>
           </CardHeader>
           <CardContent>
-            <Image
-              src='/assets/img/112.jpg'
+            <img
+              src='https://img.youtube.com/vi/y_6yjLSAvoM/maxresdefault.jpg'
               alt="Latest episode thumbnail"
               width={400}
               height={200}
@@ -51,7 +53,7 @@ export default function Home() {
           </CardContent>
           <CardFooter>
             <Button className="bg-blue-700 text-yellow-400 hover:bg-blue-800">
-            <Link href="https://www.youtube.com/watch?v=p5JllDu7fns" target='blank'>
+            <Link href="https://www.youtube.com/watch?v=y_6yjLSAvoM" target='blank'>
               Listen Now
             </Link>
             </Button>
