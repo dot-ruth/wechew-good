@@ -1,7 +1,6 @@
 "use client";
 import * as React from "react";
 import { useState } from "react";
-import Image from 'next/image';
 import episodes from "@/app/Interface/episodes";
 import {
   Card,
