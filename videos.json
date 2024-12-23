@@ -1,4 +1,4 @@
-const episodes = [
+[
   {
     "id": 1,
     "title": "የሮፍናን የመጀመሪያ ክሊፕ ሰራነው | Kirubel Tibebu | ወቸውGOOD |",
@@ -790,7 +790,4 @@ const episodes = [
     "date": "Sep 11, 2022",
     "thumbnail": "https://img.youtube.com/vi/-Y_ZziYnAPM/maxresdefault.jpg"
   }
-  ];
-  
-  export default episodes;
-  
+]

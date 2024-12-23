@@ -32,7 +32,7 @@ const EpisodesSection = () => {
             <CardHeader>
               <CardTitle className="text-blue-900">{episode.title}</CardTitle>
               <CardDescription>
-                Episode #{episode.number} • {episode.date}
+                Episode #{episode.id} • {episode.date}
               </CardDescription>
             </CardHeader>
             <CardContent>
