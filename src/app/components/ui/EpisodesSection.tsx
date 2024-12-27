@@ -30,8 +30,7 @@ const EpisodesSection = () => {
           <Card key={episode.id} className="bg-yellow-300/90">
             <CardHeader>
               <CardTitle className="text-blue-900">{episode.title}</CardTitle>
-              <CardDescription>
-                Episode #{episode.id} • {episode.date}
+              <CardDescription> {episode.date}
               </CardDescription>
             </CardHeader>
             <CardContent>

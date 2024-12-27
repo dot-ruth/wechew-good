@@ -39,12 +39,12 @@ export default function Home() {
         <h3 className="text-2xl font-bold mb-6">Latest Episode</h3>
         <Card className="bg-yellow-300/90">
           <CardHeader>
-            <CardTitle className="text-blue-900">የሮፍናን የመጀመሪያ ክሊፕ ሰራነው | Kirubel Tibebu | ወቸውGOOD |</CardTitle>
-            <CardDescription>Episode #113 • Dec 21, 2024</CardDescription>
+            <CardTitle className="text-blue-900">ስራዬ ላይ ተደበኩ | Haireya | ወቸው GOOD |</CardTitle>
+            <CardDescription>Episode #114 • Dec 25, 2024</CardDescription>
           </CardHeader>
           <CardContent>
             <img
-              src='https://img.youtube.com/vi/y_6yjLSAvoM/maxresdefault.jpg'
+              src='https://img.youtube.com/vi/FYFglLDmBRY/maxresdefault.jpg'
               alt="Latest episode thumbnail"
               width={400}
               height={200}
@@ -53,7 +53,7 @@ export default function Home() {
           </CardContent>
           <CardFooter>
             <Button className="bg-blue-700 text-yellow-400 hover:bg-blue-800">
-            <Link href="https://www.youtube.com/watch?v=y_6yjLSAvoM" target='blank'>
+            <Link href="https://www.youtube.com/watch?v=FYFglLDmBRY" target='blank'>
               Listen Now
             </Link>
             </Button>
