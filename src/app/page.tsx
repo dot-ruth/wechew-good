@@ -43,7 +43,7 @@ export default function Home() {
             <CardDescription>Episode #115 • Dec 28, 2024</CardDescription>
           </CardHeader>
           <CardContent>
-            <img
+            <Image
               src='https://img.youtube.com/vi/JP_gkg4WPEY/maxresdefault.jpg'
               alt="Latest episode thumbnail"
               width={400}

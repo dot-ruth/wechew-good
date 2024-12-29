@@ -1,5 +1,13 @@
 import videos from 'videos.json';
-const episodes: any[] = []
+interface Episode {
+  id: number;
+  title: string;
+  link: string;
+  date: string;
+  thumbnail: string;
+}
+
+const episodes: Episode[] = []
 videos.forEach(video => {
   episodes.push({
     id: video.id,
