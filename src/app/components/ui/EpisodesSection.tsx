@@ -35,7 +35,7 @@ const EpisodesSection = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Image
+              <img
                 src={episode.thumbnail}
                 alt={`Thumbnail for ${episode.title}`}
                 width={200}
