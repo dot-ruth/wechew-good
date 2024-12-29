@@ -10,7 +10,6 @@ import {
   CardDescription,
   CardContent,
 } from "@/app/components/ui/card";
-import Image from 'next/image';
 
 const EpisodesSection = () => {
   const [currentPage, setCurrentPage] = useState(1);
