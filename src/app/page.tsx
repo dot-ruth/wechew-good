@@ -39,12 +39,12 @@ export default function Home() {
         <h3 className="text-2xl font-bold mb-6">Latest Episode</h3>
         <Card className="bg-yellow-300/90">
           <CardHeader>
-            <CardTitle className="text-blue-900">በኢትዮጵያ የመጀመሪያ ሴት international Bodybuilder | ወቸው GOOD |</CardTitle>
-            <CardDescription>Episode #123 • Jan 29, 2025</CardDescription>
+            <CardTitle className="text-blue-900">ካጠፋቹ ይቅርታ ጠይቁ ለድድብናቹ ጥቅስ አትፃፉ |1Birr|ወቸው GOOD|</CardTitle>
+            <CardDescription>Episode #124 • Feb 01, 2025</CardDescription>
           </CardHeader>
           <CardContent>
             <img
-              src='https://img.youtube.com/vi/Wr4ncwJ_n2w/maxresdefault.jpg'
+              src='https://img.youtube.com/vi/Lu8Or-WFZsk/maxresdefault.jpg'
               alt="Latest episode thumbnail"
               width={400}
               height={200}
@@ -53,7 +53,7 @@ export default function Home() {
           </CardContent>
           <CardFooter>
             <Button className="bg-blue-700 text-yellow-400 hover:bg-blue-800">
-            <Link href="https://www.youtube.com/watch?v=Wr4ncwJ_n2w" target='blank'>
+            <Link href="https://www.youtube.com/watch?v=Lu8Or-WFZsk" target='blank'>
               Listen Now
             </Link>
             </Button>
